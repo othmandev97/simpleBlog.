@@ -1,16 +1,119 @@
+/* :root {
+  --color-main: #96b0e8;
+  --color-second: #5ff48e;
+  --color-third: #f589ff;
+  --color-card: #242424;
+} */
+:root {
+  --color-main: #897cff;
+  --color-second: #5ff48e;
+  --color-third: #f589ff;
+  --color-card: #242424;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* background: #1a1a1a; */
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+img {
+  width: 100%;
+}
 
 * {
   box-sizing: border-box;
+}
+
+.navbar {
+  background: var(--color-main);
+  padding: 2rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.navbar a.logo {
+  color: white;
+  font-size: 1.5rem;
+}
+.buttonContact {
+  background: var(--color-second);
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.main {
+  min-height: 75vh;
+  padding: 4rem 2rem;
+  /* flex: 1;*/
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.blog-list {
+  max-width: 970px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+.blog-description {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+/* card blog  style */
+.card__blog {
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.25);
+  /* background: var(--color-main); */
+  /* color: white; */
+}
+.card__blog--image img {
+  object-fit: contain;
+}
+
+.card__blog--content {
+  padding: 1rem 1rem;
+  /* background: var(--color-card); */
+}
+
+@media (max-width: 600px) {
+  .blog-list {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 2rem 1rem;
+  }
 }
