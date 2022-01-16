@@ -22,7 +22,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ blogs }) {
-  console.log(blogs);
   return (
     // <div className={styles.container}>
     <div className="">

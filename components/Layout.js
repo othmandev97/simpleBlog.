@@ -4,7 +4,7 @@ export const Layout = ({ children }) => {
   return (
     <>
       <nav className="navbar">
-        <Link href="/">
+        <Link href="/" passHref>
           <a className="logo">simple blog.</a>
         </Link>
         <a
@@ -19,7 +19,7 @@ export const Layout = ({ children }) => {
 
       <main className="main">{children}</main>
 
-      <footer className="footer">
+      <footer className="footer" passHref>
         <a href="#" target="_blank" rel="noopener noreferrer">
           Created by <span>&nbsp; othmane el karkoubi</span>
         </a>

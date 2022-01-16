@@ -3,6 +3,7 @@ import Image from "next/image";
 
 export default function CardBlog({ blog }) {
   const { title, slug, thumbnail } = blog.fields;
+
   return (
     <div className="card__blog">
       <div className="card__blog--image">
@@ -15,7 +16,7 @@ export default function CardBlog({ blog }) {
         />
       </div>
       <div className="card__blog--content">
-        <Link href={`/blogs/${slug}`}>
+        <Link href={`/blogs/${slug}`} passHref>
           <h1>
             <a href="#">{title}</a>
           </h1>
