@@ -20,7 +20,11 @@ export const Layout = ({ children }) => {
       <main className="main">{children}</main>
 
       <footer className="footer" passHref>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/elkarkoubiothman/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Created by <span>&nbsp; othmane el karkoubi</span>
         </a>
       </footer>
